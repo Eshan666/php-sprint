@@ -54,6 +54,42 @@
             echo "He got nice grade with ". $number;
         }
 
+        for($i = 0;$i< 10;$i++){
+          echo"The number is $i";
+          echo "<br>";
+        }
+        
+
+        $str = "My name is Eshan";
+        $x=0;
+        while(True){
+          echo "$x";
+          if($x>10){
+            break;
+          }
+          $x++;
+        }
+
+        $names = array("harun","Barun","Orun","alia");
+        foreach($names as $name){
+          echo $name;
+          
+        }
+        echo"<br>";
+
+        function sumOfMarks($marks){
+          $sum = 0;
+          foreach($marks as $mark){
+            $sum = $mark + $sum;
+            
+          }
+          return $sum;
+        }
+
+        $eshanMarks = array(98,89,40,70,94,70,50);
+        echo sumOfMarks($eshanMarks);
+
+
     
         ?>
        
